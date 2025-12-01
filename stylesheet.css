@@ -1,0 +1,81 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f4f6fb;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+}
+header {
+width: 100%;
+background: white;
+padding: 20px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+}
+#game-container {
+margin-top: 40px;
+text-align: center;
+}
+#target {
+font-size: 48px;
+margin-bottom: 10px;
+font-weight: bold;
+color: #333;
+}
+.correct-char {
+color: #4CAF50;
+}
+.wrong-char {
+color: #e74c3c;
+}
+.pending-char {
+color: #999;
+}
+#next-letter {
+font-size: 32px;
+color: rgba(0,0,0,0.4);
+margin-bottom: 20px;
+min-height: 40px;
+}
+#next-letter::before {
+content: 'Next: ';
+font-size: 16px;
+color: #999;
+}
+#score {
+font-size: 20px;
+margin-bottom: 30px;
+color: #555;
+}
+.row {
+display: flex;
+justify-content: center;
+margin-bottom: 8px;
+}
+.key {
+width: 80px;
+height: 80px;
+background: white;
+border-radius: 13px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 30px;
+color: #333;
+margin: 4px;
+transition: background 0.1s;
+}
+.key.active {
+background: #4CAF50;
+color: white;
+}
+.key.wrong {
+background: #e74c3c;
+color: white;
+}
